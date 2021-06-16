@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+  body .wrapper {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    row-gap: 1em;
+  }
+  body .wrapper .gallery {
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+  }
+  body .wrapper .gallery img {
+    width: 100%;
+    height: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrapper .gallery .desc {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  body {
+    background-color: deepskyblue;
+  }
+  body .wrapper {
+    margin: 0 auto;
+    margin-top: 1em;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    row-gap: 1em;
+  }
+  body .wrapper .gallery {
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+  }
+  body .wrapper .gallery img {
+    width: 100%;
+    height: 75%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrapper .gallery .desc {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  body {
+    background-color: darksalmon;
+  }
+  body .wrapper {
+    margin: 0 auto;
+    margin-top: 2em;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    justify-items: center;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    -webkit-column-gap: .5em;
+            column-gap: .5em;
+    row-gap: .5em;
+  }
+  body .wrapper .gallery {
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+  }
+  body .wrapper .gallery img {
+    width: 100%;
+    height: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  body .wrapper .gallery .desc {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
