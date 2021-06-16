@@ -1,0 +1,171 @@
+/* FOr mobile phones: */
+
+h1, h2, h3, h4, h5, p, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+    height: 100vh;
+    h1 {
+        font-size: 300%;
+        margin-top: 0.15%;
+        text-shadow: 2px 2px 4px black;
+    }
+}
+
+
+
+.gallery {
+    p.desc {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.heading {
+    h1{
+        color: white;
+        text-align: center;
+    }
+}
+
+.container {
+    margin-left: 2%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    padding: 0;
+    width: 96%;
+    max-width: 768px;
+    background-color: white;
+    height: auto;
+}
+
+.main-content {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 4px 4px black;
+}
+
+.gallery {
+    margin: 1% auto;
+    width: 96%;
+    color: white;
+    font-size: 50%;
+    /*border: 5px solid black;*/ /* testing purposes */
+    text-align: center;
+    padding: 1%;
+    display: inline-block;
+    justify-content: center;
+    -webkit-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-out;
+    -moz-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-out;
+    -ms-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-out;
+    -o-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-out;
+    transition: color 500ms, font-size 1000ms, border-radius 250ms ease-out;
+
+    img {
+        width: 100%;
+    margin: auto;
+    -webkit-transition: width  500ms, border-radius 250ms ease-out;
+    -moz-transition: width  500ms, border-radius 250ms ease-out;
+    -ms-transition: width  500ms, border-radius 250ms ease-out;
+    -o-transition: width  500ms, border-radius 250ms ease-out;
+    transition: width  500ms, border-radius 250ms ease-out;
+    }
+    img:hover {
+        -webkit-transition: width  500ms, border-radius 250ms ease-in;
+        -moz-transition: width  500ms, border-radius 250ms ease-in;
+        -ms-transition: width  500ms, border-radius 250ms ease-in;
+        -o-transition: width  500ms, border-radius 250ms ease-in;
+        transition: width  500ms, border-radius 250ms ease-in;
+        width: 90%;
+        border-radius: 20px;
+    }
+  }
+
+.gallery:hover {
+    color: black;
+    font-size: 100%;
+    -webkit-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-in;
+    -webkit-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-in;
+    -moz-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-in;
+    -ms-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-in;
+    -o-transition: color 500ms, font-size 1000ms, border-radius 250ms ease-in;
+    transition: color 500ms, font-size 1000ms, border-radius 250ms ease-in;
+}
+
+/* For tablets: */
+@media only screen and (min-width: 768px)  and (max-width: 1025px) {
+    .container {
+        max-width: 1025px;
+    }
+
+    .main-content {
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    
+    .gallery {
+        margin: 1%;
+        width: 45%;
+        display: inline-block;
+    }
+    .gallery {
+        img {
+            -webkit-transition: width  500ms, border-radius 250ms ease-out;
+            -moz-transition: width  500ms, border-radius 250ms ease-out;
+            -ms-transition: width  500ms, border-radius 250ms ease-out;
+            -o-transition: width  500ms, border-radius 250ms ease-out;
+            transition: width  500ms, border-radius 250ms ease-out;
+        }
+    }
+    .gallery {
+        img:hover {
+            -webkit-transition: width  500ms, border-radius 250ms ease-in;
+            -moz-transition: width  500ms, border-radius 250ms ease-in;
+            -ms-transition: width  500ms, border-radius 250ms ease-in;
+            -o-transition: width  500ms, border-radius 250ms ease-in;
+            transition: width  500ms, border-radius 250ms ease-in;
+            width: 90%;
+            border-radius: 20px;
+        }
+    }
+}
+
+/* For desktop: */
+@media only screen and (min-width: 1026px) {
+    .container {
+        max-width: 96%;       
+    }
+
+    .main-content {
+        flex-flow: row nowrap;
+    }
+
+    div.gallery {
+        margin: 0.5%;
+        width: 24%;
+        display: inline-block;
+        img {
+            -webkit-transition: width  1s, border-radius 500ms ease-out;
+            -moz-transition: width  1s, border-radius 500ms ease-out;
+            -ms-transition: width  1s, border-radius 500ms ease-out;
+            -o-transition: width  1s, border-radius 500ms ease-out;
+            transition: width  1s, border-radius 500ms ease-out;
+            }
+        img:hover {
+            -webkit-transition: width  1s, border-radius 500ms ease-in;
+            -moz-transition: width  1s, border-radius 500ms ease-in;
+            -ms-transition: width  1s, border-radius 500ms ease-in;
+            -o-transition: width  1s, border-radius 500ms ease-in;
+            transition: width  1s, border-radius 500ms ease-in;
+            width: 95%;
+            border-radius: 10px;
+        }
+    }
+}

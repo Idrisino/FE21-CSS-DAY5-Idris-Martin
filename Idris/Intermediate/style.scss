@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pangolin', cursive;
+}
+
+/* navbar */
+
+nav {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    background-color: rgb(214,176,70);
+    font-size: 10px;
+    align-items: center;
+    div{
+        padding: 20px; 
+        img {
+            width: 30px;
+            height: auto;
+        }
+        .nav {
+            left: 0;
+        }
+    }
+    ul {
+        li {
+            display: inline-block;
+            padding: 0 15px;
+            
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 18px;
+            }
+            a:hover {
+                color: black;
+            }
+        }
+    }
+}
+
+
+/* hero section */
+
+.hero {  
+    background-image: url(https://getwallpapers.com/wallpaper/full/3/0/2/848753-free-vincent-van-gogh-wallpapers-2560x1600-for-retina.jpg);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .banner {
+        h1 {
+            color: white;
+            font-size: 50px;
+        }
+        h2{
+            color: white;
+        }
+    }
+}
+
+/* Description */
+
+.desc {
+    display: flex;
+    justify-content: center;
+    p {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+}
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    
+    img{
+        width: 25vh;
+        padding: 20px;
+    }
+
+    img:hover {
+        -webkit-transition: width  2s, border-radius 1s ease-in;
+        -moz-transition: width  2s, border-radius 1s ease-in;
+        -ms-transition: width  2s, border-radius 1s ease-in;
+        -o-transition: width  2s, border-radius 1s ease-in;
+        transition: width  2s, border-radius 1s ease-in;
+        width: 50vh;
+        border-radius: 150px;
+    }
+}
+
+/* Quotes */
+
+.quotes {
+    height: 80vh;
+    background-color: rgb(125,162,127);
+    display: flex;
+    justify-content: center;
+    align-items: center;        
+    .q1 {
+        box-sizing: border-box;
+        h3{
+            font-size: 10px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 30px;
+            margin-left: 50px;
+            margin-right: 50px;
+            border-radius: 20px;
+            background-color: rgb(214,176,70);
+        }
+    }
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(214,176,70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    div {
+        text-align: center;
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+
+@media  screen and (min-width: 768px) and (max-width: 1025px) {
+    nav {
+        ul {
+            li {                
+                a {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+    .quotes {
+        .q1 {
+            h3 {
+                font-size: 22px;
+                margin: 170px 50px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    
+    
+    nav {
+        ul {
+            li {                
+                a {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+    .quotes {
+        .q1{
+            h3 {
+                font-size: 32px;
+            }
+        }
+    }
+    /* Gallery */
+
+    .gallery {
+        flex-direction: row;
+        img{
+            width: 30vh;
+        }
+    }
+}
