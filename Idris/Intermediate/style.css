@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Pangolin', cursive;
+}
+
+/* navbar */
+nav {
+  height: 10vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #d6b046;
+  font-size: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav div {
+  padding: 20px;
+}
+
+nav div img {
+  width: 30px;
+  height: auto;
+}
+
+nav div .nav {
+  left: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+/* hero section */
+.hero {
+  background-image: url(https://getwallpapers.com/wallpaper/full/3/0/2/848753-free-vincent-van-gogh-wallpapers-2560x1600-for-retina.jpg);
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero .banner h1 {
+  color: white;
+  font-size: 50px;
+}
+
+.hero .banner h2 {
+  color: white;
+}
+
+/* Description */
+.desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.desc p {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Gallery */
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 25vh;
+  padding: 20px;
+}
+
+.gallery img:hover {
+  -webkit-transition: width  2s, border-radius 1s ease-in;
+  transition: width  2s, border-radius 1s ease-in;
+  width: 50vh;
+  border-radius: 150px;
+}
+
+/* Quotes */
+.quotes {
+  height: 80vh;
+  background-color: #7da27f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.quotes .q1 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.quotes .q1 h3 {
+  font-size: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 20px;
+  background-color: #d6b046;
+}
+
+/* footer */
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: #d6b046;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer div {
+  text-align: center;
+}
+
+footer div a {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+  nav ul li a {
+    font-size: 28px;
+  }
+  .quotes .q1 h3 {
+    font-size: 22px;
+    margin: 170px 50px;
+  }
+}
+
+@media screen and (min-width: 1026px) {
+  nav ul li a {
+    font-size: 32px;
+  }
+  .quotes .q1 h3 {
+    font-size: 32px;
+  }
+  /* Gallery */
+  .gallery {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .gallery img {
+    width: 30vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
