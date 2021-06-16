@@ -9,7 +9,7 @@
   body {
     background-color: lightgreen;
   }
-  .wrapper {
+  body .wrapper {
     margin: 0 auto;
     margin-top: 1em;
     width: 100%;
@@ -22,18 +22,18 @@
             column-gap: 1em;
     row-gap: 1em;
   }
-  .gallery {
+  body .wrapper .gallery {
     width: 80%;
     height: 100%;
     border: 1px solid black;
   }
-  img {
+  body .wrapper .gallery img {
     width: 100%;
     height: 80%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .desc {
+  body .wrapper .gallery .desc {
     text-align: center;
   }
 }
@@ -42,7 +42,7 @@
   body {
     background-color: deepskyblue;
   }
-  .wrapper {
+  body .wrapper {
     margin: 0 auto;
     margin-top: 1em;
     width: 100%;
@@ -55,18 +55,18 @@
             column-gap: 1em;
     row-gap: 1em;
   }
-  .gallery {
+  body .wrapper .gallery {
     width: 80%;
     height: 100%;
     border: 1px solid black;
   }
-  img {
+  body .wrapper .gallery img {
     width: 100%;
     height: 75%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .desc {
+  body .wrapper .gallery .desc {
     text-align: center;
   }
 }
@@ -75,8 +75,7 @@
   body {
     background-color: darksalmon;
   }
-  .wrapper {
-    /* background-color: blue; */
+  body .wrapper {
     margin: 0 auto;
     margin-top: 2em;
     width: 100%;
@@ -89,18 +88,18 @@
             column-gap: .5em;
     row-gap: .5em;
   }
-  .gallery {
+  body .wrapper .gallery {
     width: 80%;
     height: 100%;
     border: 1px solid black;
   }
-  img {
+  body .wrapper .gallery img {
     width: 100%;
     height: 80%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .desc {
+  body .wrapper .gallery .desc {
     text-align: center;
   }
 }
